@@ -6,10 +6,12 @@ volumes:
 
 services:
   db:
-    image: postgres:13.10                                                                               
+    image: postgres:13.10
+
+  GNU nano 6.2                                                                              docker-compose.production.yml *                                                                                     
     env_file: .env
     volumes:
-      - pg_data_production:/var/lib/postgresql/data
+OA      - pg_data_production:/var/lib/postgresql/data
   backend:
     image: cheshuyastick/taski_backend
     env_file: .env
